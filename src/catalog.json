@@ -1,0 +1,1311 @@
+{
+  "sources": {
+    "deities": ["《泰山志》岱庙旧祀","https://shandong-chorography.org/database/b9/section/1/article/712/"],
+    "rebuild": ["《泰安年鉴》1998 年复建记载","https://shandong-chorography.org/database/d90/section/8/article/8/"],
+    "oldGuide": ["全景岱庙旧馆导览","https://www.intotaishan.com/s/daimiao/"],
+    "peitianPhoto": ["配天门一带实景","https://commons.wikimedia.org/wiki/File:Peitian_Gate,_Dai_Temple.jpg"],
+    "rearPhoto": ["后寝宫正面实景","https://commons.wikimedia.org/wiki/File:Chamber_of_Empress_Shuming_(facade),_Dai_Temple.jpg"],
+    "dongCourtPhoto": ["东御座院内实景","https://commons.wikimedia.org/wiki/File:%E5%B2%B1%E5%BA%99%E4%B8%9C%E5%BE%A1%E5%BA%A7_%E9%99%A2%E5%86%85.jpg"],
+    "dongInteriorPhoto": ["东御座室内实景","https://commons.wikimedia.org/wiki/File:%E5%B2%B1%E5%BA%99_%E4%B8%9C%E5%BE%A1%E5%BA%A7_%E5%AE%A4%E5%86%85.jpg"],
+    "eastTour": ["《东巡金石录》卷八","https://www.shidianguji.com/book/HY3077/chapter/1kr36nwsqkbah"],
+    "coupletBook": ["梁章钜《楹联丛话》卷三","https://upload.wikimedia.org/wikipedia/commons/f/fd/NCL-004638237_%E6%A5%B9%E8%81%AF%E5%8F%A2%E8%A9%B1_%E9%99%84%E7%BA%8C%E8%A9%B1_v.1.pdf"],
+    "coupletLandmarks": ["梁章钜《楹联丛话》卷六《胜迹》","https://www.shidianguji.com/book/JDLS0309/chapter/1m31pjpae2ryi"],
+    "coupletLandmarksVariant": ["《楹联丛话》卷六异本","https://www.shidianguji.com/book/CADAL02098815/chapter/1lb001mxvox10"],
+    "hanPavilionPhoto": ["旧馆汉柏亭匾额照片","https://www.daimiao.cn/i_images_2015/hbt.jpg"],
+    "hanPavilionCoupletLead": ["《泰山百鸟朝岳导游词》抱柱联转录","https://www.mingyanjiaju.org/fanwen/daoyouci/shandongdaoyouci/3859633.html"],
+    "hanPavilionGazette": ["《泰安市志》岱庙 · 汉柏亭建置","https://shandong-chorography.org/database/b9/section/3/article/880/"],
+    "hanPavilionSouth": ["2017 年汉柏亭南面实拍","https://commons.wikimedia.org/wiki/File:Han_dynasty_cypress_pavilion,_Dai_Temple.jpg"],
+    "hanPavilionNorth": ["2012 年汉柏亭内朝北实拍","https://commons.wikimedia.org/wiki/File:岱廟－從漢柏亭望向東御座.jpg"],
+    "hanPavilionLiBai": ["李白《庐山谣寄卢侍御虚舟》","https://zh.wikisource.org/zh-hans/全唐诗/卷173"],
+    "hanPavilion1962": ["1962 年汉碑亭合影图注","https://www.weishoot.com/story/4EEAFCFE-5FEC-4C45-A639-1ECE4BC839A9.html#:~:text=1962%E5%B9%B42%E6%9C%886%E6%97%A5%E4%BA%8E%E5%B2%B1%E5%BA%99%E6%B1%89%E7%A2%91%E4%BA%AD"],
+    "hanPavilionSurvey": ["《泰安年鉴》岱庙文物普查档案记载","https://shandong-chorography.org/database/d90/section/14/article/135/"],
+    "hanPavilionRepair2004": ["《泰安年鉴》2004 年汉柏亭台基维修","https://shandong-chorography.org/database/d90/section/15/article/109/"],
+    "hanPavilionRepair2008": ["《泰安年鉴》2008 年汉柏亭维修","https://shandong-chorography.org/database/d90/section/19/article/111/"],
+    "hanPavilionChenAlbum": ["陈从周《岱庙》摄影与测绘图录书目","https://search.worldcat.org/title/.-5-./oclc/951376452"],
+    "hanPavilionMuseumAlbum": ["泰安市博物馆编《岱庙》摄影集书目","https://ci.nii.ac.jp/ncid/BD08306203"],
+    "hanPavilionWeiAlbum": ["《人民日报》载《魏传统书法作品选集》出版","https://cn.govopendata.com/renminribao/1996/10/06/4/"],
+    "yaocanArticle": ["孙晓明《一字之差，为何易名》","https://epaper.qlwb.com.cn/mobile/qlwb/PDF/20250430/A10.pdf"],
+    "yaocanSurvey": ["遥参亭分殿现场图文（2012）","https://blog.sina.com.cn/s/blog_53a591a50102dzij.html"],
+    "yaocanRecent": ["遥参亭正殿近照（2026）","https://club.m.autohome.com.cn/bbs/thread/64d16cfb505b75bd/114321729-1.html"],
+    "daizongVerse": ["《湖海诗传》卷一","https://upload.wikimedia.org/wikipedia/commons/1/16/NLC511-023031404014924-27954_%E6%B9%96%E6%B5%B7%E8%A9%A9%E5%82%B3_%E4%B8%80.pdf"],
+    "archStudy": ["《泰安岱庙古建筑的历史文化内涵初探》","https://www.icich.org.cn/?a=index&aid=179&c=View&m=home"],
+    "tangHistoric": ["《泰山志》唐槐院旧址","https://shandong-chorography.org/database/b9/section/1/article/128/"],
+    "westSurvey": ["《泰安年鉴》环咏亭遗址勘查","https://shandong-chorography.org/database/d90/section/12/article/114/"],
+    "lubanFacade": ["旧馆鲁班殿正面照片","https://www.daimiao.cn/i_images_2015/lbd.jpg"],
+    "lubanReport": ["鲁班殿遗址修复现场采访","https://www.kmzx.org/lvyou/zixun/20289.html"],
+    "dongFacade": ["2017 年东御座正殿门框近照","https://commons.wikimedia.org/wiki/File:Dong_Yuzuo,_Dai_Temple.jpg"],
+    "peitianOblique": ["配天门南面斜拍","https://commons.wikimedia.org/wiki/File:50143-岱庙_配天门_Taishan.jpg"],
+    "peitianDoor": ["2015 年配天门南面明间正照","https://commons.wikimedia.org/wiki/File:Tai'an_Dai_Miao_2015.08.13_09-59-06.jpg"],
+    "renanPhoto": ["仁安门明间与檐柱实拍","https://commons.wikimedia.org/wiki/File:Ren%27an_Gate,_Dai_Temple.jpg"],
+    "renanPlaques": ["王彬《蒿里》 · 仁安门两方匾额","https://www.chinawriter.com.cn/n1/2025/0415/c418985-40459910.html"],
+    "daoli": ["聂鈫《泰山道里记》","https://zh.wikisource.org/zh/%E6%B3%B0%E5%B1%B1%E9%81%93%E9%87%8C%E8%A8%98"],
+    "tiankuangNotes": ["天贶殿楹联现场图文转录","https://blog.sina.com.cn/s/blog_44afc5fe0103067p.html"],
+    "layout": [
+      "《泰安历史文化遗迹志》岱庙",
+      "https://shandong-chorography.org/database/b9/section/13/article/351/",
+      "三路、城垣和主要单体尺寸，含天贶殿柱网与后寝宫。"
+    ],
+    "gazette": [
+      "《泰山志》岱庙",
+      "https://shandong-chorography.org/database/b9/section/1/article/325/",
+      "庙史、岱庙坊尺寸、建筑和园林沿革。"
+    ],
+    "relics": [
+      "山东地方志文物库 岱庙",
+      "https://shandong-chorography.org/database/a/section/70/article/237/",
+      "古建筑与壁画记录，适合核对不同年代及记录口径。"
+    ],
+    "guide": [
+      "泰山管委会 岱庙景点介绍",
+      "https://tsgw.taian.gov.cn/art/2021/6/13/art_363479_10320189.html",
+      "三路、礼仪前庭、岱庙坊、古柏、天贶殿、铜亭与铁塔。"
+    ],
+    "overview": [
+      "泰山管委会 岱庙",
+      "https://tsgw.taian.gov.cn/art/2026/3/23/art_363608_10320988.html",
+      "2026 年发布的景区概述，碑碣石刻 470 余通，古树名木 200 余株。"
+    ],
+    "plan": [
+      "崔梦一《北宋祠庙建筑研究》图17",
+      "https://ygx.sxu.edu.cn/db/%E5%AD%A6%E4%BD%8D/Y1088999.pdf#page=50",
+      "PDF 第 50 页，书页 44。图注署摹自傅熹年。图上有北箭头与丈制示意。"
+    ],
+    "pattern": [
+      "陈皓琪《岱庙建筑装饰纹样研究及其转译应用》",
+      "https://tsgw.taian.gov.cn/module/download/downfile.jsp?classid=0&filename=248db37ea92346319cec2030c05645d6.pdf",
+      "图4 在论文印刷页 13，标出纹样实地采样位置。正文可核对隔扇、雀替、枋画、藻井；原站 PDF 下载返回文件不存在。"
+    ],
+    "trees": [
+      "泰山管委会 古树供（认）养一览表",
+      "https://tsgw.taian.gov.cn/art/2021/5/21/art_198501_10285999.html",
+      "表中岱庙项 31 株，含编号、树种、位置和保护级别。"
+    ],
+    "treeProfiles": [
+      "泰山管委会 认养古树名木介绍",
+      "https://tsgw.taian.gov.cn/art/2021/5/21/art_198501_10285998.html",
+      "含岱庙 A0121 云列三台及其他重点古树的树形与尺寸。"
+    ],
+    "treeNation": [
+      "国家林草局 岱庙古柏协同保护",
+      "https://www.forestry.gov.cn/c/www/dfdt/658661.jhtml",
+      "岱庙 6 株千年以上古柏，含 5 株侧柏、1 株圆柏。"
+    ],
+    "treeA1": [
+      "泰安市林业局 汉柏凌寒",
+      "https://lyj.taian.gov.cn/art/2015/12/18/art_47485_3423536.html",
+      "地点、胸围、冠幅、树形与汉柏图碑。"
+    ],
+    "treeA2": [
+      "泰安市林业局 赤眉斧痕",
+      "https://lyj.taian.gov.cn/art/2025/7/3/art_358946_10299537.html",
+      "现树高、胸围、冠幅及郑波摄全景、树干。"
+    ],
+    "treeA3": [
+      "泰安市林业局 岱峦苍柏",
+      "https://lyj.taian.gov.cn/art/2025/7/8/art_358946_10299599.html",
+      "位置、编号、树高、胸围、冠幅及配图。"
+    ],
+    "treeA4": [
+      "泰安市林业局 苍龙吐虬",
+      "https://lyj.taian.gov.cn/art/2025/7/18/art_358946_10299718.html",
+      "圆柏，汉柏院西南侧，含尺寸及图。"
+    ],
+    "treeA5": [
+      "泰安市林业局 昂首天外",
+      "https://lyj.taian.gov.cn/art/2025/7/23/art_358946_10299795.html",
+      "与宣和碑相邻的千年侧柏。"
+    ],
+    "treeA6": [
+      "泰安市林业局 挂印封候",
+      "https://lyj.taian.gov.cn/art/2015/12/21/art_47485_3423540.html",
+      "正阳门内侧柏及树瘤传说。"
+    ],
+    "treeA7": [
+      "泰山管委会 唐槐抱子",
+      "https://tsgw.taian.gov.cn/art/2026/1/21/art_363606_10320236.html",
+      "唐槐老干与后植国槐及官方配图。"
+    ],
+    "stones": [
+      "泰山管委会 泰山石刻数据库",
+      "https://tsgw.taian.gov.cn/col/col322517/index.html",
+      "使用位置字段检索岱庙或对象名。数据库含位置、形制、年代、尺寸和部分照片。"
+    ],
+    "important": [
+      "《泰山志》岱庙重要碑刻一览表",
+      "https://shandong-chorography.org/database/b9/section/1/article/484/",
+      "36 项重要碑刻条目（含近现代），有年代、方位和尺寸。局部记录和数据库有口径差异。"
+    ],
+    "qin": [
+      "《泰山志》秦泰山刻石",
+      "https://shandong-chorography.org/database/b9/section/1/article/396/",
+      "秦始皇、秦二世两段铭文，现存残件和摹刻沿革。"
+    ],
+    "bronze": [
+      "《泰安市情》铜亭的历史变迁",
+      "https://shandong-chorography.org/database/b9/section/12/article/9/",
+      "迁至岱庙前后的位置、形制及修复过程。"
+    ],
+    "luban": [
+      "《齐鲁晚报》鲁班殿修复开放",
+      "https://epaper.qlwb.com.cn/Qlwb/PDF/20150323/S02.pdf",
+      "2015 年报道鲁班殿的遗址保护性恢复。"
+    ],
+    "commons": [
+      "Wikimedia Commons 岱庙图集",
+      "https://commons.wikimedia.org/wiki/Category:Dai_Temple",
+      "含城墙、天贶殿、东御座、汉柏院、铁塔等子分类。逐张许可见文件页。"
+    ],
+    "yuhua": [
+      "360Cities 雨花道院",
+      "https://www.360cities.net/zh/image/tai-an-city-dai-temple-15-taian",
+      "地面球形全景，可核对院内围合。"
+    ],
+    "panoRenan": [
+      "360Cities 仁安门",
+      "https://www.360cities.net/zh/image/tai-an-city-dai-temple-8-taian",
+      "地面球形全景。"
+    ],
+    "panoHall": [
+      "360Cities 天贶殿",
+      "https://www.360cities.net/zh/image/tai-an-city-dai-temple-11-taian",
+      "地面球形全景，用于核对主院实景。"
+    ],
+    "aerial": [
+      "岱庙航拍全景（小李儿）",
+      "https://web.9kvr.cn/index/play/tour.html?id=67a15302a0a1c34",
+      "屋顶分布和空间围合的鸟瞰参考，以测绘图校验距离。"
+    ],
+    "overhead": [
+      "岱庙正俯 4K 航拍页面",
+      "https://www.vjshi.com/watch/9273544.html",
+      "可在线看水平方位与屋面形式，素材使用见平台授权条款。"
+    ],
+    "palace": [
+      "宫阙 · 故宫三维漫游",
+      "https://mohui666.github.io/palace/",
+      "用户给的参考。原页文案对应中轴游览、点击入殿、柱网、梁架和藻井。"
+    ],
+    "songStudy": [
+      "北宋泰山石刻研究 附表1",
+      "https://tsgw.taian.gov.cn/module/download/downfile.jsp?classid=0&filename=ae6ea6fb47d345a499ace4e41d84dd37.pdf",
+      "论文附表列北宋石刻的时代、方位与尺寸。原站 PDF 下载未成功，表项从网页文献索引核对。"
+    ],
+    "mediaAerial": [
+      "航拍泰山 2017 岱庙影像",
+      "https://k.sina.com.cn/article_5953595495_p162dca867001001sem.html",
+      "斜俯中轴、前庭和正阳门城楼的新闻配图。"
+    ],
+    "iqilu": [
+      "齐鲁网 2025 岱庙图文",
+      "https://taian.iqilu.com/taianminsheng/2025/0806/5839140.shtml",
+      "主殿、前庭航拍。"
+    ],
+    "roofMedia": [
+      "泰安日报《探秘岱庙屋檐上的千年守护者》",
+      "https://taian.iqilu.com/taiangushi/2025/0519/5812662.shtml",
+      "泰安日报正文记天贶殿重檐庑殿，另有脊兽、瓦当和檐下彩画实照。"
+    ],
+    "aerialHigh": [
+      "凤凰网转载《深秋瞰泰安的岱庙》",
+      "https://ishare.ifeng.com/c/s/7rNAi1nVslO",
+      "原图 5472 × 3221，主院俯视、中轴和遥参亭航拍。"
+    ]
+  },
+  "credits": {
+    "arch": {
+      "author": "祝鱼贵",
+      "source": "https://commons.wikimedia.org/wiki/File:20260721_Dai_Temple_Archway_Taian_01.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/5/5f/20260721_Dai_Temple_Archway_Taian_01.jpg",
+      "label": "岱庙坊全景",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    },
+    "hall": {
+      "author": "祝鱼贵",
+      "source": "https://commons.wikimedia.org/wiki/File:20260721_%E5%B2%B1%E5%BA%99_%E5%A4%A9%E8%B4%B6%E6%AE%BF.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/9/94/20260721_%E5%B2%B1%E5%BA%99_%E5%A4%A9%E8%B4%B6%E6%AE%BF.jpg",
+      "label": "天贶殿近期正面",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    },
+    "gate": {
+      "author": "Huanokinhejo",
+      "source": "https://commons.wikimedia.org/wiki/File:Zhengyang_Gate,_Dai_Temple.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Zhengyang_Gate%2C_Dai_Temple.jpg",
+      "label": "正阳门与五凤楼",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    },
+    "yaocan": {
+      "author": "rheins",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%81%A5%E5%8F%82%E4%BA%AD_-_Yaocan_Pavilion_-_2012.06_-_panoramio.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/2/2c/%E9%81%A5%E5%8F%82%E4%BA%AD_-_Yaocan_Pavilion_-_2012.06_-_panoramio.jpg",
+      "label": "遥参亭",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "license": "CC BY 3.0"
+    },
+    "peitian": {
+      "author": "Huanokinhejo",
+      "source": "https://commons.wikimedia.org/wiki/File:Peitian_Gate,_Dai_Temple.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/1/15/Peitian_Gate%2C_Dai_Temple.jpg",
+      "label": "配天门",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    },
+    "renan": {
+      "author": "Huanokinhejo",
+      "source": "https://commons.wikimedia.org/wiki/File:Ren%27an_Gate,_Dai_Temple.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ren%27an_Gate%2C_Dai_Temple.jpg",
+      "label": "仁安门",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    },
+    "shuming": {
+      "author": "Huanokinhejo",
+      "source": "https://commons.wikimedia.org/wiki/File:Chamber_of_Empress_Shuming_(facade),_Dai_Temple.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/d/de/Chamber_of_Empress_Shuming_(facade)%2C_Dai_Temple.jpg",
+      "label": "后寝宫正面",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    },
+    "houzai": {
+      "author": "xiquinhosilva",
+      "source": "https://commons.wikimedia.org/wiki/File:North_Gate_of_Dai_Temple_%E5%B2%B1%E5%BA%99%E5%8C%97%E9%97%A8.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b1/North_Gate_of_Dai_Temple_%E5%B2%B1%E5%BA%99%E5%8C%97%E9%97%A8.jpg",
+      "label": "厚载门北面",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "license": "CC BY 2.0"
+    },
+    "dong": {
+      "author": "Huanokinhejo",
+      "source": "https://commons.wikimedia.org/wiki/File:Dong_Yuzuo,_Dai_Temple.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/7/74/Dong_Yuzuo%2C_Dai_Temple.jpg",
+      "label": "东御座正殿",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    },
+    "tang": {
+      "author": "Huanokinhejo",
+      "source": "https://commons.wikimedia.org/wiki/File:Tanghuai_Courtyard,_Dai_Temple.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/8/85/Tanghuai_Courtyard%2C_Dai_Temple.jpg",
+      "label": "唐槐院",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    },
+    "mural": {
+      "author": "H2v5o68z",
+      "source": "https://commons.wikimedia.org/wiki/File:%E6%B3%B0%E5%B1%B1%E7%A5%9E%E5%90%AF%E8%B7%B8%E5%9B%9E%E9%8A%AE%E5%9B%BE_1.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/f/fb/%E6%B3%B0%E5%B1%B1%E7%A5%9E%E5%90%AF%E8%B7%B8%E5%9B%9E%E9%8A%AE%E5%9B%BE_1.jpg",
+      "label": "《泰山神启跸回銮图》局部 1",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "license": "CC0"
+    },
+    "stele-2421": {
+      "label": "宋祥符大宋东岳天齐仁圣帝碑铭",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2421.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2084": {
+      "label": "宋宣和重修泰岳庙记碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2084.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2073": {
+      "label": "宋大中祥符封祀坛颂碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2073.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2033": {
+      "label": "宋大中祥符天贶殿碑铭",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2033.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2043": {
+      "label": "清乾隆东御制诗碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2043.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2042": {
+      "label": "清乾隆西御制诗碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2042.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2045": {
+      "label": "杜甫《望岳》诗碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2045.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2064": {
+      "label": "汉故卫尉卿衡府君之碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2064.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2063": {
+      "label": "汉故谷城长荡阴令张君表颂碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2063.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-1923": {
+      "label": "清乾隆“御制汉柏之图”碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_1923.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-1901": {
+      "label": "“第一山”碑",
+      "author": "泰山风景名胜区管理委员会（摄影者见来源页）",
+      "source": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_1901.html",
+      "license": "来源页未标开放许可",
+      "licenseUrl": null
+    },
+    "stele-2426": {
+      "label": "秦泰山刻石碑龛",
+      "author": "rheins",
+      "source": "https://commons.wikimedia.org/wiki/File:%E7%A7%A6%E6%B3%B0%E5%B1%B1%E5%88%BB%E7%9F%B3_-_Engraved_Stone_of_the_Qin_Dynasty_-_2012.06_-_panoramio.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/a/a4/%E7%A7%A6%E6%B3%B0%E5%B1%B1%E5%88%BB%E7%9F%B3_-_Engraved_Stone_of_the_Qin_Dynasty_-_2012.06_-_panoramio.jpg",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "dong-interior-a": {
+      "author": "Huanokinhejo",
+      "source": "https://commons.wikimedia.org/wiki/File:%E5%B2%B1%E5%BA%99_%E4%B8%9C%E5%BE%A1%E5%BA%A7_%E5%AE%A4%E5%86%85.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/0f/%E5%B2%B1%E5%BA%99_%E4%B8%9C%E5%BE%A1%E5%BA%A7_%E5%AE%A4%E5%86%85.jpg",
+      "label": "东御座室内一",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "objects": {
+    "a-yaocan": {
+      "name":"遥参亭院落","zone":"前庭","location":"岱庙坊以南、双龙池以北",
+      "description":"二进院落。中轴从南山门、仪门和元君殿，向北经四角方亭至北山门。正殿两侧为配殿及厢房。",
+      "dimensions":{},"sources":["guide","layout"]
+    },
+    "b-yaocan-e": {
+      "name":"遥参亭东配殿（眼光殿）","zone":"前庭","location":"元君殿东侧",
+      "description":"遥参亭东配殿。正殿与两侧配殿的关系见泰山管委会介绍，眼光殿名称见现场图文记录。",
+      "dimensions":{},"sources":["guide","yaocanSurvey"]
+    },
+    "b-yaocan-w": {
+      "name":"遥参亭西配殿（送子殿）","zone":"前庭","location":"元君殿西侧",
+      "description":"遥参亭西配殿，亦称送生殿。正殿与两侧配殿的关系见泰山管委会介绍，殿名见现场图文记录。",
+      "dimensions":{},"sources":["guide","yaocanSurvey"]
+    },
+    "b-yaocan-yimen": {
+      "name":"遥参亭仪门","zone":"前庭","location":"南山门内、元君殿前",
+      "description":"进入南山门后，经仪门通往元君殿。两旁门联见图录。",
+      "dimensions":{},"sources":["guide","yaocanArticle"]
+    },
+    "b-yaocan-south": {
+      "name":"遥参亭南山门","zone":"前庭","location":"遥参坊以北、仪门以南",
+      "description":"遥参亭院落的南山门，悬「泰山第一行宫」匾。",
+      "dimensions":{},"sources":["guide","yaocanArticle"]
+    },
+    "b-yaocan-north": {
+      "name":"遥参亭北山门","zone":"前庭","location":"遥参亭后院北侧",
+      "description":"遥参亭院落的北山门，向北通往岱庙坊、正阳门。",
+      "dimensions":{},"sources":["guide","layout"]
+    },
+    "b-yaocan-pavilion": {
+      "name":"遥参亭四角方亭","zone":"前庭","location":"元君殿北、北山门南",
+      "description":"遥参亭后院的单檐四角攒尖亭。",
+      "dimensions":{},"sources":["guide","pattern"]
+    },
+    "a-axis": {
+      "name": "岱庙总平面",
+      "zone": "中路",
+      "location": "城垣与庙前序列",
+      "description": "庙城坐北朝南，城域约 236.7 × 405.7 米。三路布局，中路前殿后寝，东西院落各自围合。",
+      "dimensions": {
+        "enclosure_width_m": 236.7,
+        "enclosure_length_m": 405.7
+      },
+      "sources": [
+        "layout",
+        "guide",
+        "plan",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-double-pool": {
+      "name": "双龙池",
+      "zone": "前庭",
+      "location": "遥参亭南",
+      "description": "清光绪六年（1880）所建。以一吐一吞的两龙首组织水景。",
+      "dimensions": {},
+      "sources": [
+        "guide"
+      ],
+      "roofForm": null
+    },
+    "b-yaocan-arch": {
+      "name": "遥参坊",
+      "zone": "前庭",
+      "location": "双龙池北、南山门前",
+      "description": "清乾隆三十五年（1770）修建的石坊，四柱门式，旁有铁狮。",
+      "dimensions": {},
+      "sources": [
+        "guide",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-yuanjun": {
+      "name": "碧霞元君殿",
+      "zone": "前庭",
+      "location": "遥参亭前院中轴",
+      "description": "前庭主殿，五间，黄瓦歇山顶，内祀碧霞元君。地方志记台基 21.5 × 14.4 × 0.65 米。",
+      "dimensions": {
+        "width_m": 19.15,
+        "depth_m": 11.4,
+        "height_m": 11.9,
+        "facade_bays": 5
+      },
+      "sources": [
+        "layout",
+        "guide",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-dai-arch": {
+      "name": "岱庙坊",
+      "zone": "前庭",
+      "location": "遥参亭与正阳门之间",
+      "description": "又称玲珑坊，清康熙十一年（1672）建。四柱三间三楼，石刻仿木。四根柱子的南北抱鼓石上各有大石狮，周围雕有幼狮。",
+      "dimensions": {
+        "width_m": 9.8,
+        "depth_m": 3,
+        "height_m": 11.3,
+        "facade_bays": 3
+      },
+      "sources": [
+        "gazette",
+        "guide"
+      ],
+      "roofForm": null,
+      "modelNote": "石狮的朝向和母幼组合参照实景与旧馆导览，雕刻和尺寸为示意。"
+    },
+    "b-zhengyang": {
+      "name": "正阳门与五凤楼",
+      "zone": "中路",
+      "location": "南墙正中",
+      "description": "现门楼为 1986 年复建，五间、黄琉璃瓦单檐歇山。门洞宽 6.2 米、深 17.8 米。",
+      "dimensions": {
+        "height_m": 19,
+        "facade_bays": 5,
+        "center_passage_clear_width_m": 6.2,
+        "center_passage_depth_m": 17.8
+      },
+      "sources": [
+        "layout",
+        "guide"
+      ],
+      "roofForm": null
+    },
+    "b-houzai": {
+      "name": "厚载门与望云阁",
+      "zone": "中路",
+      "location": "北墙正中",
+      "description": "北出口，旧称后宰门、鲁瞻门。门楼 1984 年仿宋式重建。旧志亦记门楼作望岳阁。",
+      "dimensions": {
+        "height_m": 9.2
+      },
+      "sources": [
+        "layout",
+        "guide",
+        "gazette"
+      ],
+      "roofForm": null
+    },
+    "b-tower-se": {
+      "name": "巽楼（东南角楼）",
+      "zone": "城垣",
+      "location": "东南城角",
+      "description": "1987 年复建，角楼采用回廊式转角形制。",
+      "dimensions": {
+        "height_m": 11.4,
+        "facade_bays": 5
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-tower-ne": {
+      "name": "艮楼（东北角楼）",
+      "zone": "城垣",
+      "location": "东北城角",
+      "description": "1994 年复建。",
+      "dimensions": {
+        "height_m": 11.4,
+        "facade_bays": 5
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-tower-nw": {
+      "name": "乾楼（西北角楼）",
+      "zone": "城垣",
+      "location": "西北城角",
+      "description": "1994 年复建。",
+      "dimensions": {
+        "height_m": 11.4,
+        "facade_bays": 5
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-tower-sw": {
+      "name": "坤楼（西南角楼）",
+      "zone": "城垣",
+      "location": "西南城角",
+      "description": "1985 年复建。",
+      "dimensions": {
+        "height_m": 11.4,
+        "facade_bays": 5
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-peitian": {
+      "name": "配天门",
+      "zone": "中路",
+      "location": "正阳门以北",
+      "description": "黄瓦歇山顶五间。南面有东西碑列，北侧以高约 1.2 米的甬道与仁安门相接。",
+      "dimensions": {
+        "width_m": 25.35,
+        "depth_m": 10.5,
+        "height_m": 11.1,
+        "facade_bays": 5
+      },
+      "sources": [
+        "layout",
+        "guide",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-linghou": {
+      "name": "三灵侯殿",
+      "zone": "中路",
+      "location": "配天门东",
+      "description": "亦见灵侯殿，1997–1998 年复建。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-taiwei": {
+      "name": "太尉殿",
+      "zone": "中路",
+      "location": "配天门西",
+      "description": "与三灵侯殿对应，1997–1998 年复建。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-renan": {
+      "name": "仁安门",
+      "zone": "中路",
+      "location": "配天门与天贶殿之间",
+      "description": "五间九脊歇山，黄琉璃瓦，保留元代营造特征。面阔、进深采用地方志记录；另一公开资料分别为 24.40、10.26 米，测点待核。",
+      "dimensions": {
+        "width_m": 25.25,
+        "depth_m": 11.15,
+        "height_m": 11,
+        "facade_bays": 5,
+        "connecting_platform_height_m": 1.2
+      },
+      "sources": [
+        "layout",
+        "guide",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-shen-e": {
+      "name": "东神门",
+      "zone": "中路",
+      "location": "仁安门东",
+      "description": "1997–1998 年复建，接东侧廊庑。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-shen-w": {
+      "name": "西神门",
+      "zone": "中路",
+      "location": "仁安门西",
+      "description": "1997–1998 年复建，接西侧廊庑。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-hall-e": {
+      "name": "东环廊与廊房",
+      "zone": "中路",
+      "location": "天贶殿院东翼",
+      "description": "近现代陆续复建的廊庑。地方志记现代部分辟为陈列室。",
+      "dimensions": {},
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-hall-w": {
+      "name": "西环廊与廊房",
+      "zone": "中路",
+      "location": "天贶殿院西翼",
+      "description": "与东廊同为主院围合的一部分。",
+      "dimensions": {},
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-bell": {
+      "name": "钟楼",
+      "zone": "中路",
+      "location": "天贶殿院东廊中段",
+      "description": "东钟、西鼓的布局见历史总平图；近景结构需核。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "plan"
+      ],
+      "roofForm": null
+    },
+    "b-drum": {
+      "name": "鼓楼",
+      "zone": "中路",
+      "location": "天贶殿院西廊中段",
+      "description": "对应东廊钟楼。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "plan"
+      ],
+      "roofForm": null
+    },
+    "b-tiankuang": {
+      "name": "天贶殿",
+      "zone": "中路",
+      "location": "仁安门北、后寝宫南",
+      "description": "北宋大中祥符二年（1009）始建，历代重修，奉祀东岳大帝。实拍俯视可辨屋顶四坡、一条正脊与四条斜垂脊，按重檐庑殿建模。个别地方志写作歇山。",
+      "dimensions": {
+        "width_m": 43.67,
+        "depth_m": 17.18,
+        "height_m": 22.3,
+        "facade_bays": 9,
+        "depth_bays": 4,
+        "lower_platform_width_m": 49.82,
+        "lower_platform_depth_m": 35.2,
+        "upper_platform_width_m": 45.67,
+        "upper_platform_depth_m": 19.75,
+        "upper_platform_height_m": 0.6
+      },
+      "sources": [
+        "layout",
+        "relics",
+        "guide",
+        "pattern",
+        "roofMedia",
+        "aerialHigh"
+      ],
+      "roofForm": "重檐庑殿"
+    },
+    "b-platform": {
+      "name": "天贶殿双层台基与露台",
+      "zone": "中路",
+      "location": "主殿下及南面",
+      "description": "天贶殿台基高出地面约 2.65 米，殿前露台约 29.5 × 21.85 米，三面石栏。",
+      "dimensions": {
+        "width_m": 29.5,
+        "depth_m": 21.85,
+        "platform_height_reference_m": 2.65
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-pavilion-e": {
+      "name": "东御碑亭",
+      "zone": "中路",
+      "location": "天贶殿前东侧",
+      "description": "置乾隆东御制诗碑，六角攒尖。与同院乾隆重修岱庙碑所在位置须分别核对。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "stones"
+      ],
+      "roofForm": null
+    },
+    "b-pavilion-w": {
+      "name": "西御碑亭",
+      "zone": "中路",
+      "location": "天贶殿前西侧",
+      "description": "置乾隆西御制诗碑，与东亭相望。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "stones"
+      ],
+      "roofForm": null
+    },
+    "b-shuming": {
+      "name": "后寝宫正宫（淑明殿）",
+      "zone": "中路",
+      "location": "天贶殿以北",
+      "description": "供奉淑明后。五间黄瓦歇山，前后有廊。",
+      "dimensions": {
+        "width_m": 23.1,
+        "depth_m": 13.27,
+        "height_m": 11.7,
+        "facade_bays": 5
+      },
+      "sources": [
+        "layout",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-shuming-e": {
+      "name": "东寝宫",
+      "zone": "中路",
+      "location": "后寝正宫东",
+      "description": "三间灰筒瓦歇山。岱庙银杏在这一带。",
+      "dimensions": {
+        "width_m": 12.7,
+        "depth_m": 9.45,
+        "height_m": 9.6,
+        "facade_bays": 3
+      },
+      "sources": [
+        "layout",
+        "trees"
+      ],
+      "roofForm": null
+    },
+    "b-shuming-w": {
+      "name": "西寝宫",
+      "zone": "中路",
+      "location": "后寝正宫西",
+      "description": "三间灰筒瓦歇山，和东寝宫组成配寝。",
+      "dimensions": {
+        "width_m": 12.7,
+        "depth_m": 9.45,
+        "height_m": 9.6,
+        "facade_bays": 3
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "a-han": {
+      "name": "汉柏院",
+      "zone": "东路",
+      "location": "东路南段",
+      "description": "旧炳灵殿所在。现有汉柏、碑墙、炳灵门与汉柏亭等。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "guide",
+        "trees"
+      ],
+      "roofForm": null
+    },
+    "b-bingling": {
+      "name": "炳灵门",
+      "zone": "东路",
+      "location": "汉柏院",
+      "description": "曾称东宫门，1956 年重建。三间灰瓦硬山，直棂窗。",
+      "dimensions": {
+        "width_m": 11.72,
+        "depth_m": 8.58,
+        "height_m": 8.3,
+        "facade_bays": 3
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-han-pavilion": {
+      "name": "汉柏亭",
+      "zone": "东路",
+      "location": "汉柏院",
+      "description": "20 世纪 50 年代拓建，三间卷棚歇山，置于多级台基。",
+      "dimensions": {
+        "facade_bays": 3
+      },
+      "sources": [
+        "layout",
+        "stones"
+      ],
+      "roofForm": null
+    },
+    "a-dong": {
+      "name": "东御座",
+      "zone": "东路",
+      "location": "东华门内",
+      "description": "东御座的沿革见迎宾堂、三茅殿和清代驻跸亭等称谓。地方志还记垂花门、两道仪门、东西耳房与回廊；这些附属建筑的独立位置待核。院内有秦泰山刻石。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "guide",
+        "qin"
+      ],
+      "roofForm": null
+    },
+    "b-dong-gate": {
+      "name": "东御座大门",
+      "zone": "东路",
+      "location": "两仪门之间，面南",
+      "description": "三间穿堂式，卷棚硬山，次间砌墙开窗。",
+      "dimensions": {
+        "width_m": 12.8,
+        "depth_m": 7.7,
+        "height_m": 6.4,
+        "facade_bays": 3
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-dong-main": {
+      "name": "东御座正殿",
+      "zone": "东路",
+      "location": "东御座庭院北侧",
+      "description": "五间卷棚硬山，立在 19.06 × 10.5 × 1.7 米石台上。",
+      "dimensions": {
+        "width_m": 18.8,
+        "depth_m": 10.1,
+        "height_m": 6.9,
+        "facade_bays": 5
+      },
+      "sources": [
+        "layout",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "b-dong-match-e": {
+      "name": "东御座东配殿",
+      "zone": "东路",
+      "location": "正殿前庭东侧",
+      "description": "三间、卷棚硬山，前廊式。",
+      "dimensions": {
+        "width_m": 11.42,
+        "depth_m": 7.5,
+        "height_m": 6.1,
+        "facade_bays": 3
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "b-dong-match-w": {
+      "name": "东御座西配殿",
+      "zone": "东路",
+      "location": "正殿前庭西侧",
+      "description": "三间、卷棚硬山，前廊式。",
+      "dimensions": {
+        "width_m": 11.42,
+        "depth_m": 7.5,
+        "height_m": 6.1,
+        "facade_bays": 3
+      },
+      "sources": [
+        "layout"
+      ],
+      "roofForm": null
+    },
+    "a-tang": {
+      "name": "唐槐院",
+      "zone": "西路",
+      "location": "西路南部",
+      "description": "旧称延禧院，延禧殿旧址在唐槐北侧。地方志记录附近曾有诚明堂、御香亭等建筑。现可见后植树从老槐枯干间长出，称唐槐抱子。",
+      "dimensions": {},
+      "sources": [
+        "tangHistoric",
+        "layout",
+        "guide"
+      ],
+      "roofForm": null
+    },
+    "a-yuhua": {
+      "name": "雨花道院",
+      "zone": "西路",
+      "location": "西路北部",
+      "description": "岱庙西路院落，现有鲁班殿保护性建筑和环咏亭遗址。旧馆导览亦记旧有藏经堂。环咏亭遗址范围待测绘。",
+      "dimensions": {},
+      "sources": [
+        "westSurvey",
+        "layout",
+        "guide",
+        "luban",
+        "yuhua"
+      ],
+      "roofForm": null
+    },
+    "a-su": {
+      "name": "素景园",
+      "zone": "北部",
+      "location": "后寝宫以北的园区",
+      "description": "岱庙北部园林，有园门、池塘和水石景。",
+      "dimensions": {},
+      "sources": [
+        "guide",
+        "commons"
+      ],
+      "roofForm": null
+    },
+    "a-zi": {
+      "name": "紫园",
+      "zone": "北部",
+      "location": "后寝宫北侧的园区",
+      "description": "实景照片记录园内小径和植物。",
+      "dimensions": {},
+      "sources": [
+        "guide",
+        "commons"
+      ],
+      "roofForm": null
+    },
+    "b-bronze": {
+      "name": "铜亭（天仙金阙）",
+      "zone": "北部",
+      "location": "东寝宫北、后苑一带",
+      "description": "明万历四十三年（1615）铸造，曾在碧霞祠及灵应宫，1972 年迁至岱庙，次年安装。",
+      "dimensions": {},
+      "sources": [
+        "bronze",
+        "gazette"
+      ],
+      "roofForm": null
+    },
+    "b-iron": {
+      "name": "铁塔",
+      "zone": "北部",
+      "location": "岱庙北部院落",
+      "description": "铁铸建筑类文物。原图可查塔身各层、塔刹及构件轮廓。",
+      "dimensions": {},
+      "sources": [
+        "guide",
+        "commons"
+      ],
+      "roofForm": null
+    },
+    "i-tiankuang": {
+      "name": "天贶殿柱网、神龛和天花",
+      "zone": "中路",
+      "location": "天贶殿内",
+      "description": "地方志记外檐柱 28 根、中围金柱 20 根、内槽金柱 12 根，另有藻井、平棊和东岳大帝神龛。九开间属于同一殿堂。",
+      "dimensions": {
+        "outer_columns": 28,
+        "middle_columns": 20,
+        "inner_columns": 12,
+        "column_diameter_reference_m": 0.78
+      },
+      "sources": [
+        "layout",
+        "guide",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "i-mural": {
+      "name": "泰山神启跸回銮图",
+      "zone": "中路",
+      "location": "天贶殿东、北、西壁",
+      "description": "三壁壁画合长约 62 米、高约 3.3 米，叙述东岳大帝出巡与回銮，现存画面经过后世修绘。",
+      "dimensions": {
+        "wall_painting_total_length_m": 62,
+        "wall_painting_height_m": 3.3
+      },
+      "sources": [
+        "layout",
+        "relics",
+        "commons"
+      ],
+      "roofForm": null
+    },
+    "s-2421": {
+      "name": "宋祥符大宋东岳天齐仁圣帝碑铭",
+      "zone": "中路",
+      "location": "岱庙配天门西侧",
+      "description": "宋真宗封禅后加崇东岳神号的宋碑。北面有“五岳独宗”题刻。 宋祥符六年（1013）。龟趺螭首。碑体基本完好，碑文残921字。",
+      "dimensions": {
+        "overall_height_m": 8.08
+      },
+      "sources": [
+        "stones"
+      ],
+      "dating": "宋祥符六年（1013）",
+      "form": "龟趺螭首",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2421.html",
+      "archivalSize": "通高808厘米，宽217厘米，侧宽63厘米"
+    },
+    "s-2084": {
+      "name": "宋宣和重修泰岳庙记碑",
+      "zone": "中路",
+      "location": "岱庙配天门东侧",
+      "description": "北宋重修岱庙的重要实物文献。碑阴为“万代瞻仰”。 宋宣和六年（1124）。螭首龟趺，碑阳四周浅浮雕方夔纹。碑体基本完好，碑阳文残缺56字。",
+      "dimensions": {
+        "overall_height_m": 9.28
+      },
+      "sources": [
+        "stones"
+      ],
+      "dating": "宋宣和六年（1124）",
+      "form": "螭首龟趺，碑阳四周浅浮雕方夔纹",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2084.html",
+      "archivalSize": "通高928厘米，碑首189*265*87厘米，碑身547*205*68厘米。碑座192*275*500厘米。"
+    },
+    "s-2073": {
+      "name": "宋大中祥符封祀坛颂碑",
+      "zone": "中路",
+      "location": "岱庙天贶殿东南碑台上",
+      "description": "宋真宗泰山封禅纪功碑，王旦撰，裴瑀书。 宋大中祥符二年（1009）。圆首覆斗座。碑体保存完好，碑文多有残缺。",
+      "dimensions": {
+        "overall_height_m": 4.94
+      },
+      "sources": [
+        "stones"
+      ],
+      "dating": "宋大中祥符二年（1009）",
+      "form": "圆首覆斗座",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2073.html",
+      "archivalSize": "通高高494厘米，碑身385*157*61厘米。碑座高108厘米。"
+    },
+    "s-2033": {
+      "name": "宋大中祥符天贶殿碑铭",
+      "zone": "中路",
+      "location": "岱庙天贶殿西碑台上",
+      "description": "宋大中祥符二年（1009）。方座圆首。碑体稍有剥蚀，碑文有残损。",
+      "dimensions": {
+        "overall_height_m": 4.08
+      },
+      "sources": [
+        "stones"
+      ],
+      "dating": "宋大中祥符二年（1009）",
+      "form": "方座圆首",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2033.html",
+      "archivalSize": "通高408厘米，碑身346*148*40厘米。"
+    },
+    "s-2043": {
+      "name": "清乾隆东御制诗碑",
+      "zone": "中路",
+      "location": "岱庙东御碑亭内（天贶殿前）",
+      "description": "乾隆谒岱庙所作诗文的御书石刻，立于东御碑亭。碑首和碑身边框饰线刻龙纹。",
+      "dimensions": {
+        "overall_height_m": 3.16
+      },
+      "sources": [
+        "stones"
+      ],
+      "dating": "清乾隆年间",
+      "form": "方首方座，碑首及碑身四周阳面、阴面线刻二龙戏珠图案，座饰案几状纹",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2043.html",
+      "archivalSize": "通高316厘米，碑首79*129*44.5厘米，碑身187*110*41厘米，碑座51*140*72厘米。"
+    },
+    "s-2042": {
+      "name": "清乾隆西御制诗碑",
+      "zone": "中路",
+      "location": "岱庙天贶殿前",
+      "description": "与东御制诗碑相对，规制相近，文字不同。 清乾隆二十二年（1757）、乾隆二十七年（1762）、乾隆五十五年（1790）。方首方座，碑首及碑身四周线刻二龙戏珠图，座饰案几状纹。保存完好。",
+      "dimensions": {
+        "overall_height_m": 3.16
+      },
+      "sources": [
+        "stones"
+      ],
+      "dating": "清乾隆二十二年（1757）、乾隆二十七年（1762）、乾隆五十五年（1790）",
+      "form": "方首方座，碑首及碑身四周线刻二龙戏珠图，座饰案几状纹",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2042.html",
+      "archivalSize": "通高316厘米，碑首77*117*45.5厘米，碑身187*111*40厘米，碑座52.5*141.5*70厘米。"
+    },
+    "s-2045": {
+      "name": "清乾隆何人麟书杜甫《望岳》诗碑",
+      "zone": "中路",
+      "location": "岱庙东碑廊内",
+      "description": "清乾隆四十九年（1784），何人麟草书杜甫《望岳》。碑阳录有全诗，末两句为「会当凌绝顶，一览众山小」。碑阴另有登岱及咏汉柏诗文。",
+      "dimensions": {
+        "overall_height_m": 2.7
+      },
+      "sources": [
+        "stones",
+        "important"
+      ],
+      "dating": "清乾隆四十九年（1784）",
+      "form": "方首方座",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2045.html",
+      "archivalSize": "通高270厘米，碑身219×88×27.5厘米。"
+    },
+    "s-2064": {
+      "name": "汉故卫尉卿衡府君之碑",
+      "zone": "中路",
+      "location": "岱庙东碑廊内",
+      "description": "东汉建宁元年（168）所立，纪念衡方。由汶上迁存，汉隶名品。 东汉建宁元年（168）。圆首方座，额下有穿，原座已失，其碑首上雕圆柱状晕纹。碑下部漫患，部分文字残泐不清；碑阴文字全部漫灭。",
+      "dimensions": {},
+      "sources": [
+        "stones"
+      ],
+      "dating": "东汉建宁元年（168）",
+      "form": "圆首方座，额下有穿，原座已失，其碑首上雕圆柱状晕纹",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2064.html",
+      "archivalSize": "碑身250*108*25.5厘米"
+    },
+    "s-2063": {
+      "name": "汉故谷城长荡阴令张君表颂碑",
+      "zone": "中路",
+      "location": "岱庙东碑廊内",
+      "description": "东汉中平三年（186）所立，通称张迁碑。由东平迁存，汉隶名品。 东汉中平三年（186）。圆首方座，碑周边有蟠螭浮雕盘环（原座已失）。碑体完好，碑文残泐六十八字。",
+      "dimensions": {},
+      "sources": [
+        "stones"
+      ],
+      "dating": "东汉中平三年（186）",
+      "form": "圆首方座，碑周边有蟠螭浮雕盘环（原座已失）",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2063.html",
+      "archivalSize": "碑身263*115*22厘米，"
+    },
+    "s-1923": {
+      "name": "清乾隆“御制汉柏之图”碑",
+      "zone": "东路",
+      "location": "岱庙汉柏院",
+      "description": "乾隆绘汉柏并题刻，与汉柏院古树观赏历史相关。 清乾隆三十六年（1771）、乾隆四十一年（1776）、乾隆五十五年（1790）。方首方趺，碑首及碑阳四周线刻双龙戏珠纹及行龙纹。碑座浮雕变形莲瓣纹。碑体基本完好，碑阳题跋大多漫患不清。",
+      "dimensions": {
+        "overall_height_m": 3.45
+      },
+      "sources": [
+        "stones"
+      ],
+      "dating": "清乾隆三十六年（1771）、乾隆四十一年（1776）、乾隆五十五年（1790）",
+      "form": "方首方趺，碑首及碑阳四周线刻双龙戏珠纹及行龙纹。碑座浮雕变形莲瓣纹",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_1923.html",
+      "archivalSize": "通高345厘米，碑身210*118.5*39.5厘米"
+    },
+    "s-1901": {
+      "name": "“第一山”碑",
+      "zone": "东路",
+      "location": "岱庙汉柏院",
+      "description": "米芾书法在汉柏院的一处据拓片复制刻石。 1965年据拓片复制。方首方座。碑体完好。",
+      "dimensions": {
+        "overall_height_m": 2.72
+      },
+      "sources": [
+        "stones"
+      ],
+      "dating": "1965年据拓片复制",
+      "form": "方首方座",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_1901.html",
+      "archivalSize": "通高272厘米，碑身高246*107*20.5厘米。"
+    },
+    "s-2426": {
+      "name": "秦泰山刻石",
+      "zone": "东路",
+      "location": "东御座院内",
+      "description": "秦始皇与秦二世先后刻辞。现藏东御座的秦石为残件，可认十个残字。历代摹刻另有其物。 秦。上为秦刻石，下两石为题跋碑，一并嵌于砖亭内。残存二石，仅存7个整字，3个残字。",
+      "dimensions": {},
+      "sources": [
+        "stones",
+        "qin"
+      ],
+      "dating": "秦",
+      "form": "上为秦刻石，下两石为题跋碑，一并嵌于砖亭内",
+      "archive": "https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2426.html",
+      "archivalSize": "石残长125厘米，宽54.5厘米"
+    },
+    "b-luban": {
+      "name": "鲁班殿",
+      "zone": "西路",
+      "location": "雨花道院",
+      "description": "工匠为祀鲁班所建，后毁；今见遗址保护修复后的建筑。",
+      "dimensions": {"width_m":17.7,"depth_m":7.8,"facade_bays":5},
+      "sources": [
+        "luban"
+      ],
+      "roofForm": null
+    },
+    "i-dong": {
+      "name": "东御座室内陈设",
+      "zone": "东路",
+      "location": "东御座内",
+      "description": "现有室内实景可见门窗构件和馆内布展。部分照片的具体殿、间、朝向需实地核对。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "commons"
+      ],
+      "roofForm": null
+    },
+    "i-yuanjun": {
+      "name": "遥参亭元君殿室内",
+      "zone": "前庭",
+      "location": "元君殿内",
+      "description": "地方志记奉碧霞元君。平面五开间，前后廊。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "pattern"
+      ],
+      "roofForm": null
+    },
+    "i-shuming": {
+      "name": "后寝三宫室内",
+      "zone": "中路",
+      "location": "正宫及东西配寝",
+      "description": "正宫五间、东西寝宫各三间。采样论文包含后寝宫藻井与母题。",
+      "dimensions": {},
+      "sources": [
+        "layout",
+        "pattern"
+      ],
+      "roofForm": null
+    }
+  }
+}

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#13211d">
+  <meta name="description" content="山东泰安岱庙三维漫游，走入殿堂，寻访古树名木，查阅楹联、碑刻和泰山摩崖石刻。">
+  <title>岱庙｜三维漫游</title><link rel="icon" href="./seal.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="岱庙首页">
+      <span class="seal" aria-hidden="true">岱</span>
+      <span><b>岱庙</b><small>三维漫游</small></span>
+    </a>
+    <nav class="main-nav" aria-label="浏览模式">
+      <button id="nav-world" class="nav-active" type="button">全庙漫游</button>
+      <button id="nav-mountain" type="button">泰山线路</button>
+      <button id="nav-cliffs" type="button" aria-haspopup="dialog" aria-controls="cliff-dialog">摩崖石刻</button>
+      <button id="nav-guide" type="button">建筑图录</button>
+      <button id="nav-stones" class="stone-nav" aria-label="碑刻" type="button">碑刻</button>
+      <button id="nav-couplets" type="button" aria-haspopup="dialog" aria-controls="couplet-dialog">楹联</button>
+      <button id="nav-trees" type="button" aria-haspopup="dialog" aria-controls="tree-dialog">古树名木</button>
+    </nav>
+    <button class="source-button" id="about" type="button">资料与模型 <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main class="workbench">
+    <aside class="route" id="axis-guide" aria-label="中轴导览">
+      <div class="route-heading">
+        <p>泰安 · 泰山南麓</p>
+        <h1>岱庙</h1>
+        <div class="route-sub"><strong>中轴导览</strong><button id="nav-halls" type="button"></button></div>
+      </div>
+      <ol class="route-list" id="route-list"></ol>
+      <footer class="route-footer"><span class="led"></span> 现状布局 · 示意复原</footer>
+    </aside>
+
+    <aside class="route" id="tree-guide" aria-label="寻访千年古柏" hidden>
+      <div class="route-heading">
+        <p>岱庙 · 古树名木</p>
+        <div class="route-sub"><strong>寻访千年古柏</strong><button id="exit-tree-route" class="route-reset" type="button">返回中轴</button></div>
+      </div>
+      <ol class="route-list" id="tree-route-stops"></ol>
+      <footer class="route-footer"><button id="tree-route-catalog" class="route-reset" type="button">古树图录</button></footer>
+    </aside>
+
+    <aside class="route mountain-route" id="mountain-guide" aria-label="登山线路" hidden>
+      <div class="route-heading">
+        <p>泰安 · 五岳之首</p>
+        <h1>泰山</h1>
+        <div class="route-sub"><strong>登山线路</strong><button class="route-reset" id="show-all-routes" type="button">看全部</button></div>
+      </div>
+      <ul class="mountain-route-list" id="mountain-routes"></ul>
+      <div class="mountain-line-key"><span>━ 徒步 / 公路</span><span>┄ 索道</span><span class="mountain-cliff-key">◆ 红门线摩崖石刻</span></div>
+      <footer class="route-footer">线路走向示意</footer>
+    </aside>
+
+    <section class="stage" id="stage" aria-label="岱庙三维场景" data-mode="world">
+      <div id="view" class="view"></div>
+      <div class="stage-wash" aria-hidden="true"></div>
+      <div id="viewport-title" class="viewport-title">
+        <div class="scene-kicker"><span></span><span id="view-kicker">庙城全景</span></div>
+        <h2 id="scene-title">一座庙城，三路院落</h2>
+      </div>
+      <div class="view-switch" id="view-switch" aria-label="预设视角">
+        <button type="button" data-view="overview" aria-pressed="true">鸟瞰</button>
+        <button type="button" data-view="axis" aria-pressed="false">中轴</button>
+        <button type="button" data-view="plan" aria-pressed="false">总平面</button>
+        <button type="button" id="view-restore" aria-pressed="false">碑刻还原</button>
+      </div>
+      <div class="stage-loading" id="stage-load" role="status">正在载入三维场景…</div>
+      <div class="labels" id="labels"></div>
+      <div class="labels" id="mountain-labels" hidden></div>
+      <div class="mountain-actions" id="mountain-actions" hidden>
+        <button id="mountain-overview" type="button">线路总览</button>
+        <button id="temple-view" type="button">返回岱庙</button>
+      </div>
+      <div class="scene-cta" id="scene-cta">
+        <button type="button" class="stage-action" id="stage-enter">进入天贶殿 <span aria-hidden="true">↗</span></button>
+        <button type="button" class="stage-action" id="stage-inscription" hidden>碑照与碑文 <span aria-hidden="true">↗</span></button>
+      </div>
+
+      <div class="walk-ui" id="walk-ui" hidden>
+        <button class="back-button" id="exit-hall" type="button"><span aria-hidden="true">←</span> 返回庙城</button>
+        <div class="walk-stops" id="walk-stops" aria-label="殿内视点"></div>
+        <div class="walk-pad" aria-label="移动方向">
+          <button data-move="KeyW" aria-label="前进" type="button">↑</button>
+          <button data-move="KeyA" aria-label="左移" type="button">←</button>
+          <button data-move="KeyS" aria-label="后退" type="button">↓</button>
+          <button data-move="KeyD" aria-label="右移" type="button">→</button>
+        </div>
+      </div>
+      <div class="map-card" id="map-card">
+        <div class="map-head"><strong>庙城小图</strong><span>↑ 北</span></div>
+        <div class="minimap" id="minimap" aria-label="选取建筑、碑刻或古树"></div>
+        <div class="map-foot"><i></i>中轴 <i class="map-diamond"></i>碑刻 <span>236.7 × 405.7 m</span></div>
+      </div>
+      <div class="scene-footer">
+        <span id="scene-hint">拖动旋转 · 滚轮缩放 · 点击建筑</span>
+        <button id="fullscreen" type="button" title="切换全屏" aria-label="切换全屏">⛶</button>
+      </div>
+    </section>
+
+    <aside class="detail" aria-label="对象详情" id="detail-panel"></aside>
+  </main>
+
+  <dialog id="guide-dialog" aria-labelledby="guide-title">
+    <header><h2 id="guide-title">建筑图录</h2><form method="dialog"><button type="submit" aria-label="关闭图录">×</button></form></header>
+    <div class="guide-filters" aria-label="图录范围">
+      <button type="button" data-guide="all" aria-pressed="true">全部建筑</button>
+      <button type="button" data-guide="halls" aria-pressed="false">殿宇</button>
+      <button type="button" data-guide="enter" aria-pressed="false">可入殿</button>
+      <button type="button" data-guide="yards" aria-pressed="false">院落</button>
+      <button type="button" data-guide="sites" aria-pressed="false">遗址与配属</button>
+      <button type="button" data-guide="couplets" aria-pressed="false">楹联</button>
+    </div>
+    <div class="guide-content" id="guide-content"></div>
+  </dialog>
+  <dialog id="couplet-dialog" aria-labelledby="couplet-title">
+    <header><h2 id="couplet-title">岱庙楹联</h2><form method="dialog"><button type="submit" aria-label="关闭楹联">×</button></form></header>
+    <div class="stone-filters couplet-filters">
+      <button id="couplet-reset" class="secondary" type="button" hidden>查看全部地点</button>
+      <label>地点类型 <select id="couplet-group"></select></label>
+      <label>查找 <input id="couplet-query" type="search" placeholder="地点、题署或联句"></label>
+      <output id="couplet-count" aria-live="polite"></output>
+    </div>
+    <div id="couplet-content"></div>
+  </dialog>
+  <dialog id="tree-dialog" aria-labelledby="tree-title">
+    <header>
+      <h2 id="tree-title">古树名木</h2>
+      <form method="dialog"><button type="submit" aria-label="关闭古树名木">×</button></form>
+    </header>
+    <div class="tree-gallery">
+      <nav class="tree-index" aria-label="古树目录">
+        <section>
+          <h3>寻访千年古柏</h3>
+          <p>正阳门内 → 汉柏院 → 宣和碑北侧</p>
+          <button id="start-tree-route" class="secondary" type="button">开始导览</button>
+          <ol id="ancient-cypress-list"></ol>
+        </section>
+        <section>
+          <h3>其他古树</h3>
+          <ul id="other-tree-list"></ul>
+        </section>
+        <div class="side-links" id="tree-route-source"></div>
+      </nav>
+      <article class="tree-record" id="tree-record" aria-label="古树档案" tabindex="-1"></article>
+    </div>
+  </dialog>
+  <dialog id="stone-dialog" aria-labelledby="stone-title">
+    <header><h2 id="stone-title">碑刻图录</h2><form method="dialog"><button type="submit" aria-label="关闭碑刻图录">×</button></form></header>
+    <div class="stone-filters">
+      <label>位置 <select id="stone-group"></select></label>
+      <label>范围 <select id="stone-scope"><option value="all">全部图录</option><option value="scene">三维可定位</option></select></label>
+      <label>查找 <input id="stone-query" type="search" placeholder="碑名、诗句、年代或位置"></label>
+      <output id="stone-count" aria-live="polite"></output>
+    </div>
+    <div class="guide-content stone-content" id="stone-content"></div>
+  </dialog>
+  <dialog id="stone-archive-dialog" aria-labelledby="stone-archive-title">
+    <header><h2 id="stone-archive-title">碑刻档案</h2><form method="dialog"><button type="submit" aria-label="关闭碑刻档案">×</button></form></header>
+    <div class="about-content" id="stone-archive-content"></div>
+  </dialog>
+  <dialog id="inscription-dialog" aria-labelledby="inscription-title">
+    <header>
+      <div><p id="inscription-location" class="zone"></p><h2 id="inscription-title">碑照与碑文</h2></div>
+      <form method="dialog"><button type="submit" aria-label="关闭碑照与碑文">×</button></form>
+    </header>
+    <div id="inscription-content"></div>
+  </dialog>
+  <dialog id="cliff-dialog" aria-labelledby="cliff-title">
+    <header>
+      <div><p class="zone">泰山中路 · 红门至岱顶</p><h2 id="cliff-title">摩崖石刻</h2></div>
+      <form method="dialog"><button type="submit" aria-label="关闭摩崖石刻">×</button></form>
+    </header>
+    <div class="cliff-sections" id="cliff-sections" aria-label="登山路段"></div>
+    <div class="cliff-tools">
+      <label class="cliff-search">检索 <input id="cliff-query" type="search" placeholder="题名、题署、地点或诗句"></label>
+      <output id="cliff-count" aria-live="polite"></output>
+    </div>
+    <div class="cliff-body">
+      <section class="cliff-index" aria-label="石刻目录"><div id="cliff-list"></div><div id="cliff-sources" class="cliff-sources"></div></section>
+      <article class="cliff-detail" id="cliff-detail" aria-label="石刻详情" tabindex="-1"></article>
+    </div>
+  </dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <header><h2 id="about-title">资料与模型</h2><form method="dialog"><button type="submit" aria-label="关闭资料">×</button></form></header>
+    <div class="about-content" id="about-content"></div>
+  </dialog>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
+
+
