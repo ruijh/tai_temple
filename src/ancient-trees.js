@@ -6,6 +6,7 @@ const urbanTreeRegister = ['《泰安市城市绿地系统专项规划》古树�
 const qianlongStele = ['泰山石刻档案《御制汉柏之图》', 'https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_1923.html'];
 const daimiaoAerial = ['齐鲁壹点岱庙航拍', 'https://ishare.ifeng.com/c/s/7rNAi1nVslO'];
 const commonsCC0 = 'https://creativecommons.org/publicdomain/zero/1.0/';
+const commonsBY3 = 'https://creativecommons.org/licenses/by/3.0/';
 const forestImages = 'https://lyj.taian.gov.cn/picture/';
 const mountImages = 'https://tsgw.taian.gov.cn/picture/';
 
@@ -15,6 +16,7 @@ export const ancientTrees = [
     location:'正阳门内东侧', age:'约 2100 年（林业资料估计）',
     history:'老柏主干倾斜，离地约八米的枝杈长着一处形似猴头的树瘤。「挂印封侯」的誉名有附会关羽挂印及萧何受封两种民间解释。2024 年，以此柏种子育成的两株幼苗赠予陕西茂陵博物馆。',
     photos:[{label:'挂印封侯实拍', original:mountImages+'0/6fa2926f67414632a29e3e66ba3198f5.png',
+      linkOnly:true,
       source:'https://tsgw.taian.gov.cn/art/2026/1/21/art_363606_10320237.html', credit:'泰山风景名胜区管理委员会'}],
     refs:[register,['泰安市林业局「挂印封侯」', 'https://lyj.taian.gov.cn/art/2015/12/21/art_47485_3423540.html'],
       ['泰山管委会汉柏幼苗记录', 'https://tsgw.taian.gov.cn/art/2024/4/18/art_48270_10311876.html']],
@@ -42,8 +44,10 @@ export const ancientTrees = [
     history:'树干下部可见斧状痕迹和红斑。《水经注》引《从征记》，记泰山庙古柏及赤眉斫柏的旧闻。把今日这株树与古书所写的那一株相认，属于当地传说。',
     photos:[
       {label:'赤眉斧痕全景', original:forestImages+'-1/4d5f6e7244684c1cb0021dca8c6935d5.png',
+        linkOnly:true,
         source:'https://lyj.taian.gov.cn/art/2025/7/3/art_358946_10299537.html', credit:'郑波 · 泰安市林业局'},
       {label:'赤眉斧痕树干近照', original:forestImages+'-1/e98a9b4c78ed41e7ac40acf2aaaa423a.png',
+        linkOnly:true,
         source:'https://lyj.taian.gov.cn/art/2025/7/3/art_358946_10299537.html', credit:'泰安市林业局'},
     ],
     refs:[register,scenicTrees,['《水经注》卷二十四《汶水》', 'https://www.shidianguji.com/book/NGJ89241200000329016941/chapter/1lvyb6hrb9smr']],
@@ -53,6 +57,7 @@ export const ancientTrees = [
     location:'汉柏院西南部，影翠池北面', age:'约 2100 年（林业资料估计）',
     history:'泰安市林业局记古柏立在影翠池北面，冠形开展，夏日倒映在池水中，因此又称「汉柏影翠」。全景可对看低斜的主干与宽展的树冠。',
     photos:[{label:'岱峦苍柏全景', original:forestImages+'-1/ad917d752972439eb7960b6053a13c1f.jpg',
+      linkOnly:true,
       source:'https://lyj.taian.gov.cn/art/2025/7/8/art_358946_10299599.html', credit:'从军 · 泰安市林业局'}],
     refs:[register,['泰安市林业局「岱峦苍柏」方位', 'https://lyj.taian.gov.cn/art/2015/12/21/art_47485_5331193.html'],
       ['《泰山志》汉柏院与影翠池', 'https://shandong-chorography.org/database/b9/section/1/article/126/']],
@@ -62,9 +67,14 @@ export const ancientTrees = [
     location:'汉柏院西南角，炳灵门南侧碑亭东侧、影翠池西南', age:'约 2100 年（林业资料估计）',
     history:'林业局记载，古圆柏中空后曾补植一株侧柏，今日侧柏已枯，老圆柏仍存活。粗干有许多树瘤，向下弯的枝条形似龙须，因此得名「苍龙吐虬」。',
     photos:[
-      {label:'苍龙吐虬全景', original:forestImages+'0/s_8b28bfad022e4bebb7c9355521dad622.jpg',
+      {label:'苍龙吐虬全株 · 2012 年', width:3193, height:2400, credit:'rheins · CC BY 3.0',
+        original:'https://upload.wikimedia.org/wikipedia/commons/6/61/%E8%8B%8D%E9%BE%99%E5%90%90%E8%99%AC_-_Dragon_Cypress_-_2012.06_-_panoramio.jpg',
+        source:'https://commons.wikimedia.org/wiki/File:苍龙吐虬_-_Dragon_Cypress_-_2012.06_-_panoramio.jpg', license:commonsBY3},
+      {label:'苍龙吐虬全景', original:forestImages+'0/8b28bfad022e4bebb7c9355521dad622.jpg',
+        linkOnly:true,
         source:'https://lyj.taian.gov.cn/art/2025/7/18/art_358946_10299718.html', credit:'薛巍 · 泰安市林业局'},
-      {label:'苍龙吐虬树干近照', original:forestImages+'0/s_1f75c3fca2784902a79ff4682accf840.jpg',
+      {label:'苍龙吐虬树干近照', original:forestImages+'0/1f75c3fca2784902a79ff4682accf840.jpg',
+        linkOnly:true,
         source:'https://lyj.taian.gov.cn/art/2025/7/18/art_358946_10299718.html', credit:'郑波 · 泰安市林业局'},
     ],
     refs:[register,scenicTrees,
@@ -77,8 +87,10 @@ export const ancientTrees = [
     history:'林业局记录树高 15.5 米，是岱庙汉柏中最高的一株。枝干向上伸展，和南侧宣和碑阴的「万代瞻仰」四字相映。',
     photos:[
       {label:'昂首天外全景', original:forestImages+'-1/7639646e9bc9456490e14fb011bb0b50.png',
+        linkOnly:true,
         source:'https://lyj.taian.gov.cn/art/2025/7/23/art_358946_10299795.html', credit:'郑波 · 泰安市林业局'},
       {label:'昂首天外枝干近照', original:forestImages+'-1/8d33f426d048498b828edc3c7e85b594.png',
+        linkOnly:true,
         source:'https://lyj.taian.gov.cn/art/2025/7/23/art_358946_10299795.html', credit:'郑波 · 泰安市林业局'},
     ],
     refs:[register,['泰山石刻档案《宋宣和重修泰岳庙记碑》', 'https://tsgw.taian.gov.cn/art/2023/4/13/art_322517_2084.html']],
@@ -87,8 +99,13 @@ export const ancientTrees = [
     id:'t-A0007', label:'唐槐抱子', species:'国槐', area:'a-tang', registry:'37090200007',
     location:'唐槐院西侧，旧延禧殿址文物库房楼以南，近城墙马道', age:'老槐传为唐植，活树为 20 世纪补植',
     history:'明《泰山小史》已有延禧殿前唐槐的记载。泰山管委会记老槐于 1951 年枯死，1952 年道士尚士廉在老干洞中补植新槐。地方志另有 1952 年枯死、1953 年补植的记法。今日仍可看见老干与新树相抱。',
-    photos:[{label:'唐槐抱子老干与新槐', original:mountImages+'0/bbfa2ce898da42e3ae17eb439b45cbd0.png',
-      source:'https://tsgw.taian.gov.cn/art/2026/1/21/art_363606_10320236.html', credit:'泰山风景名胜区管理委员会'}],
+    photos:[
+      {label:'唐槐抱子与围栏 · 2012 年', width:3193, height:2400, credit:'rheins · CC BY 3.0',
+        original:'https://upload.wikimedia.org/wikipedia/commons/5/5d/%E5%94%90%E6%A7%90_-_Pagoda_Tree_of_the_Tang_Dynasty_-_2012.06_-_panoramio.jpg',
+        source:'https://commons.wikimedia.org/wiki/File:唐槐_-_Pagoda_Tree_of_the_Tang_Dynasty_-_2012.06_-_panoramio.jpg', license:commonsBY3},
+      {label:'唐槐抱子老干与新槐', original:mountImages+'0/bbfa2ce898da42e3ae17eb439b45cbd0.png',
+        linkOnly:true, source:'https://tsgw.taian.gov.cn/art/2026/1/21/art_363606_10320236.html', credit:'泰山风景名胜区管理委员会'},
+    ],
     refs:[register,urbanTreeRegister,
       ['《泰安历史文化遗迹志》岱庙', 'https://shandong-chorography.org/database/b9/section/13/article/351/'],
       ['《泰山志》唐槐与文物库房楼方位', 'https://shandong-chorography.org/database/b9/section/1/article/128/'],
@@ -100,6 +117,7 @@ export const ancientTrees = [
     location:'天贶殿后，东寝宫院侧', age:'林业局据碑文记为 1678 年栽植',
     history:'泰安市林业局据《重修岱庙历履碑》记，此树植于康熙十七年重修岱庙时。高干、广冠，入秋满树金黄。「擎雷」的誉名来自它仿佛为殿宇遮挡雷电的说法。',
     photos:[{label:'擎雷银杏冠幅与秋色', original:forestImages+'0/24e9d4d183e74148896166a0bdb3df53.jpg',
+      linkOnly:true,
       source:'https://lyj.taian.gov.cn/art/2025/8/22/art_358946_10300279.html', credit:'郑波、亓伟东 · 泰安市林业局'}],
     refs:[register,treeIntroductions],
   },
@@ -108,6 +126,7 @@ export const ancientTrees = [
     location:'岱庙西花园（素景园）西墙内', age:'官方旧资料有 500 余年、约 800 年两种估计',
     history:'树冠分成三簇，如三朵云。林业局记树干从基部裂开，在较高处重新合拢。当地传说三朵祥云曾为出巡的泰山神遮阳，后来化为西花园的古柏。',
     photos:[{label:'云列三台实拍', original:forestImages+'0/c8fde29e971d4b5bb12f8c71e555fb68.jpg',
+      linkOnly:true,
       source:'https://lyj.taian.gov.cn/art/2016/8/18/art_47485_5331194.html', credit:'泰安市林业局'}],
     refs:[treeIntroductions,scenicTrees,
       ['《泰山志》后花园西墙内记载', 'https://shandong-chorography.org/database/b9/section/1/article/129/'],

@@ -1,6 +1,6 @@
 import { inscriptions, summitVerse } from './inscription-texts.js';
 import archivalInscriptions from './archival-inscriptions.json';
-import { photoPreviewUrl } from './remote-images.js';
+import { loadPhotoForZoom } from './remote-images.js';
 
 export function hasTranscription(id) {
   return Boolean(inscriptions[id]?.sections.length || archivalInscriptions[id]?.length);
@@ -44,7 +44,7 @@ export function createInscriptionViewer({ make, button, link, credits }) {
     frame.append(photo, marks);
     viewport.append(frame);
 
-    let active = photos[0], zoom = 1;
+    let active = photos[0], zoom = 1, stopPhotoLoad;
     function resize() {
       if(!photo.naturalWidth)return;
       const fit = Math.min(viewport.clientWidth, viewport.clientHeight * photo.naturalWidth / photo.naturalHeight);
@@ -100,6 +100,7 @@ export function createInscriptionViewer({ make, button, link, credits }) {
     const photoButtons = photos.map(item=>button(item.label,null,()=>choose(item)));
     choices.append(...photoButtons);
     function choose(item) {
+      stopPhotoLoad?.();
       active = item;
       zoom = 1;
       status.textContent='正在载入图片…';
@@ -110,7 +111,7 @@ export function createInscriptionViewer({ make, button, link, credits }) {
       viewport.hidden=false;
       frame.style.width = '';
       photo.alt = site.label+' · '+item.label;
-      photo.src = item.original;
+      photo.removeAttribute('src');
       photoButtons.forEach((control,index)=>control.setAttribute('aria-pressed',String(item === photos[index])));
       marks.replaceChildren(...(item.regions ?? []).map((region,index)=>{
         const marker=make('span',item.precise?String(index+1):null,'inscription-marker'+(item.precise?' is-precise':''));
@@ -126,24 +127,15 @@ export function createInscriptionViewer({ make, button, link, credits }) {
       const source = item.source ?? record.archive;
       if (source) caption.append(link('图像来源 ↗',source));
       if(item.original)caption.append(link('打开原图 ↗',item.original));
-      if (photo.complete) resize();
+      stopPhotoLoad=loadPhotoForZoom(photo,item,()=>{
+        reset.disabled=false;
+        viewport.hidden=false;
+        resize();
+      },()=>{
+        viewport.hidden=true;
+        status.textContent='原站图片暂时无法显示，请打开原图或照片出处';
+      });
     }
-    photo.addEventListener('load',()=>{
-      reset.disabled=false;
-      viewport.hidden=false;
-      resize();
-    });
-    photo.addEventListener('error',()=>{
-      const preview=photoPreviewUrl(active.original,1920);
-      if(photo.src===active.original&&preview!==active.original){
-        photo.src=preview;
-        return;
-      }
-      viewport.hidden=true;
-      status.textContent='原站图片暂时无法显示，请打开原图或照片出处';
-      shrink.disabled=true;
-      enlarge.disabled=true;
-    });
     photo.addEventListener('click',event=>scale(zoom === 1 ? 2 : 1,event));
     viewport.addEventListener('wheel',event=>{
       if (!event.ctrlKey && !event.metaKey) return;
@@ -227,7 +219,11 @@ export function createInscriptionViewer({ make, button, link, credits }) {
     dialog.showModal();
     const observer = new ResizeObserver(resize);
     observer.observe(viewport);
-    dialog.addEventListener('close',()=>observer.disconnect(),{once:true});
+    dialog.addEventListener('close',()=>{
+      observer.disconnect();
+      stopPhotoLoad?.();
+      photo.removeAttribute('src');
+    },{once:true});
     dialog.scrollTop = 0;
     resize();
   };

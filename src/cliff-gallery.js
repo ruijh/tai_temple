@@ -66,13 +66,13 @@ export function createCliffGallery({ make, button, link, openInscription, showRo
       const photo=make('img');
       photo.alt=picture.caption;
       expand.append(photo);
-      const caption=make('figcaption',picture.caption+' · '+entry.pictures.length+' 张照片可放大');
+      const caption=make('figcaption',picture.caption+' · '+entry.pictures.length+' 张实拍');
       caption.append(make('small',picture.credit),link('打开原图 ↗',picture.original),link('图像来源 ↗',picture.source));
       if(picture.license)caption.append(link('授权 ↗',picture.license));
-      loadPhotoPreview(photo,picture.original,960,()=>{
+      loadPhotoPreview(photo,picture,960,()=>{
         expand.remove();
         caption.append(make('small','预览暂不可用'),button('查看照片与释文','secondary',()=>openPhoto(entry)));
-      });
+      },false);
       figure.append(expand,caption);
       detail.append(figure);
     }else if(!entry.state)detail.append(make('p','高清实景照片待补。','cliff-note'));

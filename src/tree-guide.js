@@ -16,8 +16,9 @@ export function createTreeGuide({make, button, link, openInscription, locate, st
       const caption=make('figcaption');
       caption.append(make('strong',photo.label),make('small',photo.credit));
       const refs=make('div',null,'side-links');
-      const zoomButton=button('放大查看', 'tree-zoom-button',zoom);
-      if(tree.compare){
+      if(photo.linkOnly){
+        caption.append(make('small','请前往原站查看'));
+      }else{
         const preview=button('',null,zoom);
         const image=make('img');
         image.alt=photo.label;
@@ -26,12 +27,12 @@ export function createTreeGuide({make, button, link, openInscription, locate, st
         preview.setAttribute('aria-label','放大查看'+photo.label);
         preview.append(image);
         figure.append(preview);
-        loadPhotoPreview(image,photo.original,500,()=>{
+        loadPhotoPreview(image,photo,500,()=>{
           preview.remove();
-          caption.append(make('small','预览暂不可用'));
-          refs.prepend(zoomButton);
-        });
-      }else refs.append(zoomButton);
+          caption.append(make('small','预览暂不可用，可打开原图或照片出处。'));
+          refs.prepend(button('放大查看','tree-zoom-button',zoom));
+        },false);
+      }
       refs.append(link('原图 ↗',photo.original),link('照片出处 ↗',photo.source));
       if(photo.license)refs.append(link('授权 ↗',photo.license));
       else caption.append(make('small','来源页未标开放许可'));
@@ -70,7 +71,6 @@ export function createTreeGuide({make, button, link, openInscription, locate, st
     if(point&& !tree.refs.some(([,url])=>url===point.reference[1]))references.append(link(...point.reference));
     record.replaceChildren(heading,status,photos(tree));
     if(tree.compare)record.append(make('p',tree.compare,'tree-caption'));
-    if(!tree.compare)record.append(make('p','照片从原站载入。','tree-caption'));
     const officialPhoto=tree.photos.find(photo=>!photo.license);
     if(officialPhoto&&!tree.refs.some(([,url])=>url===officialPhoto.source)){
       references.prepend(link('官方古树资料 ↗',officialPhoto.source));

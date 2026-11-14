@@ -144,10 +144,10 @@ function imageFigure(key, alt, caption, zoom) {
   const cap=make('figcaption');
   cap.append(link('打开原图 ↗',credit.original),document.createTextNode(' · '),
     link(caption,credit.source),document.createTextNode(' · '+credit.author+' · '),link(credit.license,credit.licenseUrl));
-  loadPhotoPreview(image,credit.original,500,()=>{
+  loadPhotoPreview(image,credit,330,()=>{
     preview.remove();
     cap.append(make('span',' · 预览暂不可用'));
-  });
+  },false);
   fig.append(preview,cap);
   return fig;
 }
@@ -358,7 +358,7 @@ function renderStones(){
     if(site.photo){
       const img=make('img');
       img.alt='';
-      loadPhotoPreview(img,credits[site.photo].original,250);
+      loadPhotoPreview(img,credits[site.photo],250);
       tile.append(img);
     }
     const caption=make('span');
@@ -780,7 +780,7 @@ function drawGuide(filter) {
     if(site.photo){
       const img=make('img');
       img.alt='';
-      loadPhotoPreview(img,credits[site.photo].original,330);
+      loadPhotoPreview(img,credits[site.photo],330);
       locate.append(img);
     }
     const caption=make('span');
